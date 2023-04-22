@@ -1,0 +1,25 @@
+[package]
+name = "setserial"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ollivier Robert <roberto@keltia.net>"]
+keywords = ["cli", "cli-utility", "dns"]
+repository = "https://github.com/keltia/dmarc-rs"
+license = "MIT"
+readme = "README.md"
+description = "Read and update the serial number for a DNS zone."
+categories = [ "email", "command-line-utilities" ]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+chrono = "0"
+regex = "1"
