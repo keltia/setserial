@@ -22,7 +22,7 @@ fn parse_serial(input: &str) -> Result<(String, String)> {
 /// - if not, replace it with the first one from today
 ///
 fn process_one(s: &str) -> Result<String> {
-    let s: Vec<&str> = s.split("\n").collect();
+    let s: Vec<&str> = s.split('\n').collect();
     let s = s[0].to_owned();
     let (s_date, s_serial) = parse_serial(&s)?;
 
